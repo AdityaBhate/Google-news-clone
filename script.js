@@ -13,7 +13,7 @@ WSJNews.addEventListener("click", getWSJNews);
 
 //News Section
 function getBusinessNews() {
-	let apiKey1 = "YOUR API KEY";
+	let apiKey1 = "c064d2536a8c48aaaf726544892cd00d";
 	fetch(
 		"https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=" +
 			apiKey1,
@@ -44,7 +44,7 @@ function getBusinessNews() {
 }
 
 function getTechNews() {
-	let apiKey1 = "YOUR API KEY";
+	let apiKey1 = "c064d2536a8c48aaaf726544892cd00d";
 	fetch(
 		"https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=" + apiKey1,
 		{
@@ -74,7 +74,7 @@ function getTechNews() {
 }
 
 function getWSJNews() {
-	let apiKey1 = "YOUR API KEY";
+	let apiKey1 = "c064d2536a8c48aaaf726544892cd00d";
 	fetch("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=" + apiKey1, {
 		headers: {
 			Accept: "application/json",
@@ -101,7 +101,7 @@ function getWSJNews() {
 }
 
 //Weather Section
-let apiKey = "YOUR API KEY";
+let apiKey = "6c9676cf98ccabb0fccf37ff740afc31";
 if (navigator.geolocation) {
 	navigator.geolocation.getCurrentPosition((position) => {
 		let lat = position.coords.latitude;
